@@ -1,0 +1,31 @@
+datadump.location:
+  author: D:\Book Tracker App\data_dump_author.txt
+  works: D:\Book Tracker App\data_dump_work.txt
+
+
+spring:
+  data:
+    cassandra:
+      keyspace-name: main
+      username: qpvYRqqILbvtlSPBikgwCbIQ
+      password: bks-F3EkjysmZULbvjdzO7afZZLBR.ZCZbd1PfRThMXG,ZY4w.NmFCx9PL4CTnWJrrXrN-JbI7rZifNHdZB7F+GnsiQ9dwzu566TmgyQi-OZDm--v44deNs5w+uaarmL
+      schema-action: create_if_not_exists
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+  application:
+    name: betterreads-data-loader
+
+datastax.astra:
+    secure-connect-bundle: secure-connect.zip
+
+astra.db:
+    id: 1b558286-d592-47a0-a5ef-b7b9a2e21892-1
+    region: us-west1
+    keyspace: main
+    application.token: AstraCS:qpvYRqqILbvtlSPBikgwCbIQ:f106eb855a488acfa00b28b38ea61dd1ee0219892b9fc4b079ece072849c504c
+
+
+
